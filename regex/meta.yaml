@@ -1,11 +1,11 @@
 package:
   name: regex
-  version: 2015.10.29
+  version: "2015.11.09"
 
 source:
-  fn: regex-2015.10.29.tar.gz
-  url: https://pypi.python.org/packages/source/r/regex/regex-2015.10.29.tar.gz
-  md5: f47b5682143028a6d66ae582a4c8180f
+  fn: regex-2015.11.09.tar.gz
+  url: https://pypi.python.org/packages/source/r/regex/regex-2015.11.09.tar.gz
+  md5: d6c4dd309592151fd61e75260674b68e
 
 requirements:
   build:

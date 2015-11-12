@@ -1,11 +1,11 @@
 package:
   name: memory_profiler
-  version: "0.37"
+  version: "0.39"
 
 source:
-  fn: memory_profiler-0.37.tar.gz
-  url: https://pypi.python.org/packages/source/m/memory_profiler/memory_profiler-0.37.tar.gz
-  md5: e406d6599557ebf57f1d27ce91539659
+  fn: memory_profiler-0.39.tar.gz
+  url: https://pypi.python.org/packages/source/m/memory_profiler/memory_profiler-0.39.tar.gz
+  md5: 8d06789eaf07ac20487d8baec27b1a29
 
 requirements:
   build:
