@@ -1,11 +1,11 @@
 package:
-  name: memory_profiler
-  version: "0.39"
+  name: sortedcontainers
+  version: "1.4.4"
 
 source:
-  fn: memory_profiler-0.39.tar.gz
-  url: https://pypi.python.org/packages/source/m/memory_profiler/memory_profiler-0.39.tar.gz
-  md5: 8d06789eaf07ac20487d8baec27b1a29
+  fn: sortedcontainers-1.4.4.tar.gz
+  url: https://pypi.python.org/packages/source/s/sortedcontainers/sortedcontainers-1.4.4.tar.gz
+  md5: 456638aea9f8f705bd2e3c891c402023
 #  patches:
    # List any patch files here
    # - fix.patch
@@ -17,9 +17,9 @@ source:
     # Put any entry points (scripts to be generated automatically) here. The
     # syntax is module:function.  For example
     #
-    # - memory_profiler = memory_profiler:main
+    # - sortedcontainers = sortedcontainers:main
     #
-    # Would create an entry point called memory_profiler that calls memory_profiler.main()
+    # Would create an entry point called sortedcontainers that calls sortedcontainers.main()
 
 
   # If this is a new build for the same version, increment the build
@@ -34,9 +34,10 @@ requirements:
   run:
     - python
 
-# test:
+test:
   # Python imports
-  # imports:
+  imports:
+    - sortedcontainers
 
   # commands:
     # You can put test commands to be run here.  Use this to test that the
@@ -46,14 +47,15 @@ requirements:
   # You can also put a file called run_test.py in the recipe that will be run
   # at test time.
 
-  # requires:
+  requires:
+    # - tox
     # Put any additional test requirements here.  For example
     # - nose
 
 about:
-  home: http://pypi.python.org/pypi/memory_profiler
-  license: BSD License
-  summary: 'A module for monitoring memory usage of a python program'
+  home: http://www.grantjenks.com/docs/sortedcontainers/
+  license: Apache Software License
+  summary: 'Python Sorted Container Types: SortedList, SortedDict, and SortedSet'
 
 # See
 # http://docs.continuum.io/conda/build.html for

@@ -1,11 +1,30 @@
 package:
   name: regex
-  version: "2015.11.09"
+  version: "2015.11.22"
 
 source:
-  fn: regex-2015.11.09.tar.gz
-  url: https://pypi.python.org/packages/source/r/regex/regex-2015.11.09.tar.gz
-  md5: d6c4dd309592151fd61e75260674b68e
+  fn: regex-2015.11.22.tar.gz
+  url: https://pypi.python.org/packages/source/r/regex/regex-2015.11.22.tar.gz
+  md5: 0bd2c23059f99cbaf9046000d51d3de7
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # noarch_python: True
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - regex = regex:main
+    #
+    # Would create an entry point called regex that calls regex.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
 
 requirements:
   build:
@@ -14,11 +33,27 @@ requirements:
   run:
     - python
 
-test:
-  # Python imports 
-  imports:
-    - regex
+# test:
+  # Python imports
+  # imports:
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
 
 about:
-  home: https://code.google.com/p/mrab-regex-hg/
+  home: https://bitbucket.org/mrabarnett/mrab-regex
   license: Python Software Foundation License
+  summary: 'Alternative regular expression module, to replace re.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
